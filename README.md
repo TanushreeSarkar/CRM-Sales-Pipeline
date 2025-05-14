@@ -1,7 +1,7 @@
 <div align="center">
   <h1>📊 CRM Sales Pipeline</h1>
   <p>A powerful and scalable <b>Customer Relationship Management (CRM)</b> system built with <b>Java Spring Boot</b> and <b>Maven</b>. Streamline your sales cycle from lead capture to deal closure with intuitive dashboards, automation, and cloud integration.</p>
-  <img src="https://via.placeholder.com/600x300.png?text=CRM+Sales+Pipeline+Banner" alt="CRM Sales Pipeline Banner" width="600"/>
+  <img src="https://github.com/TanushreeSarkar/CRM-Sales-Pipeline/blob/main/logo.avif" alt="CRM Sales Pipeline Banner" width="200"/>
 </div>
 
 ---
@@ -155,8 +155,8 @@ We welcome contributions! Follow these steps:
 ## 📬 Contact
 
 Have questions or suggestions? Reach out!
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **GitHub**: [yourusername](https://github.com/yourusername)
+- **Email**: [2k22.csaiml.2212256@gmail.com](mailto:2k22.csaiml.2212256@gmail.com)
+- **GitHub**: [TanushreeSarkar](https://github.com/TanushreeSarkar)
 
 ---
 
@@ -167,7 +167,7 @@ Have questions or suggestions? Reach out!
 - Thanks to the open-source community for tools and libraries
 
 <div align="center">
-  <img src="https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif" alt="Thank You GIF" width="300"/>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM200aGd3bnpiYWg4NDVldTRiM204em1lOG50cXFncWRvcGhqbGE1bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OLPQ6z2hlHmwFc4Hso/giphy.gif" alt="Thank You GIF" width="300"/>
 </div>
 
 ---
