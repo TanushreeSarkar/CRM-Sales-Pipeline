@@ -1,6 +1,5 @@
 # Customer Relationship Management System (CRM) 🚀
 
-![CRM Logo](https://github.com/TanushreeSarkar/CRM-Sales-Pipeline/blob/main/logo.avif)
 
 ![Java](https://img.shields.io/badge/Java-17-blue.svg)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-brightgreen.svg)
