@@ -8,9 +8,7 @@
 
 > A **production-grade CRM backend** built with **Java 17** and **Spring Boot 3.0**.  
 > Designed for enterprise scalability, this RESTful API handles customer management with precision, offering robust CRUD operations, advanced filtering, and analytics.  
-
 ---
-
 ## 🎯 Features
 
 - **Customer Management**:
@@ -28,7 +26,21 @@
   - Clean 3-tier design: `Controller → Service → DAO`.
 
 ---
+## ⚙️ Tech Stack  
 
+| Layer            | Technology |
+|------------------|------------|
+| **Backend**      | ![Java](https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?logo=springboot&logoColor=white) |
+| **ORM**          | ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-59666C?logo=hibernate&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-Specification-blue) |
+| **Database**     | ![H2](https://img.shields.io/badge/H2-Database-003545?logo=databricks&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql&logoColor=white) |
+| **Build Tool**   | ![Maven](https://img.shields.io/badge/Maven-Build%20Tool-C71A36?logo=apachemaven&logoColor=white) |
+| **API Testing**  | ![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman&logoColor=white) |
+| **Documentation**| ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?logo=swagger&logoColor=black) |
+| **Version Control** | ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white) |
+| **Deployment**   | ![Railway](https://img.shields.io/badge/Railway-Cloud%20Hosting-0B0D0E?logo=railway&logoColor=white) |
+| **IDE**          | ![Eclipse](https://img.shields.io/badge/Eclipse-IDE-2C2255?logo=eclipseide&logoColor=white) |
+
+---
 ## 📐 Entity Relationship Diagram
 
 ```mermaid
@@ -68,22 +80,6 @@ erDiagram
 
 ```
 ---
-## ⚙️ Tech Stack  
-
-| Layer            | Technology |
-|------------------|------------|
-| **Backend**      | ![Java](https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?logo=springboot&logoColor=white) |
-| **ORM**          | ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-59666C?logo=hibernate&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-Specification-blue) |
-| **Database**     | ![H2](https://img.shields.io/badge/H2-Database-003545?logo=databricks&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql&logoColor=white) |
-| **Build Tool**   | ![Maven](https://img.shields.io/badge/Maven-Build%20Tool-C71A36?logo=apachemaven&logoColor=white) |
-| **API Testing**  | ![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman&logoColor=white) |
-| **Documentation**| ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?logo=swagger&logoColor=black) |
-| **Version Control** | ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white) |
-| **Deployment**   | ![Railway](https://img.shields.io/badge/Railway-Cloud%20Hosting-0B0D0E?logo=railway&logoColor=white) |
-| **IDE**          | ![Eclipse](https://img.shields.io/badge/Eclipse-IDE-2C2255?logo=eclipseide&logoColor=white) |
-
----
-
 ## 🧪 API Endpoints
 
 | Method | Endpoint                             | Description                          |
