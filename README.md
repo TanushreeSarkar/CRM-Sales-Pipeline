@@ -31,29 +31,56 @@
 
 ## 📐 Entity Relationship Diagram
 
-```
-Customer
----------
-id (PK)
-firstName
-lastName
-email
-mobileNumber
-age
-```
+```mermaid
+erDiagram
+    CUSTOMER {
+        int id PK
+        string firstName
+        string lastName
+        string email
+        string mobileNumber
+        int age
+    }
 
+    LEAD {
+        int id PK
+        string source
+        string status
+        string createdDate
+    }
+
+    OPPORTUNITY {
+        int id PK
+        string stage
+        double value
+        string expectedCloseDate
+    }
+
+    SALES_PIPELINE {
+        int id PK
+        string pipelineName
+        string description
+    }
+
+    CUSTOMER ||--o{ LEAD : "generates"
+    LEAD ||--o{ OPPORTUNITY : "converted_to"
+    OPPORTUNITY }o--|| SALES_PIPELINE : "tracked_in"
+
+```
 ---
+## ⚙️ Tech Stack  
 
-## ⚙️ Tech Stack
-
-| Layer        | Technology         |
-|--------------|--------------------|
-| Backend      | Java 17, Spring Boot 3.0 |
-| ORM          | Hibernate + JPA     |
-| Database     | H2 (Dev) / MySQL (Prod) |
-| Build Tool   | Maven               |
-| API Testing  | Postman             |
-| Documentation| Swagger (Optional)  |
+| Layer            | Technology |
+|------------------|------------|
+| **Backend**      | ![Java](https://img.shields.io/badge/Java-17-007396?logo=java&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?logo=springboot&logoColor=white) |
+| **ORM**          | ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-59666C?logo=hibernate&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-Specification-blue) |
+| **Database**     | ![H2](https://img.shields.io/badge/H2-Database-003545?logo=databricks&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?logo=mysql&logoColor=white) |
+| **Build Tool**   | ![Maven](https://img.shields.io/badge/Maven-Build%20Tool-C71A36?logo=apachemaven&logoColor=white) |
+| **API Testing**  | ![Postman](https://img.shields.io/badge/Postman-API%20Testing-FF6C37?logo=postman&logoColor=white) |
+| **Documentation**| ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?logo=swagger&logoColor=black) |
+| **Version Control** | ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white) |
+| **Deployment**   | ![Railway](https://img.shields.io/badge/Railway-Cloud%20Hosting-0B0D0E?logo=railway&logoColor=white) |
+| **IDE**          | ![Eclipse](https://img.shields.io/badge/Eclipse-IDE-2C2255?logo=eclipseide&logoColor=white) |
 
 ---
 
@@ -71,6 +98,44 @@ age
 | GET    | `/api/customers/between-age/{min}/{max}` | Get customers in age range       |
 | GET    | `/api/customers/grouped-by-age`      | Group customers by age               |
 | GET    | `/api/customers/count`               | Total customer count                |
+
+---
+
+## 📊 Sample Data Snapshot  
+
+Below is a quick look at how the data in each entity might look inside the **CRM Sales Pipeline** system.  
+
+### 👤 Customer  
+| id | firstName | lastName | email               | mobileNumber | age |
+|----|-----------|----------|---------------------|--------------|-----|
+| 1  | Tanushree | Sarkar   | tanushree@mail.com  | 9876543210   | 24  |
+| 2  | Arjun     | Mehta    | arjun.mehta@mail.com| 9123456789   | 29  |
+
+---
+
+### 🧲 Lead  
+| id | title           | status    | createdDate | customerId |
+|----|-----------------|-----------|-------------|------------|
+| 1  | Website Signup  | New       | 2025-09-01  | 1          |
+| 2  | Product Inquiry | Contacted | 2025-09-05  | 2          |
+
+---
+
+### 💼 Deal  
+| id | name              | amount | stage        | expectedCloseDate | leadId |
+|----|-------------------|--------|--------------|-------------------|--------|
+| 1  | CRM Integration   | 5000   | Negotiation  | 2025-09-20        | 1      |
+| 2  | Premium Package   | 12000  | Proposal Sent| 2025-10-02        | 2      |
+
+---
+
+### 📊 Pipeline Stage  
+| id | stageName    | description                  |
+|----|--------------|------------------------------|
+| 1  | Prospecting  | Identifying potential leads  |
+| 2  | Negotiation  | Discussing terms and pricing |
+| 3  | Closed Won   | Deal successfully closed     |
+| 4  | Closed Lost  | Deal lost to competition     |
 
 ---
 
